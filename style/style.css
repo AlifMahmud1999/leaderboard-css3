@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #F3F1FF;
+}
+.player-title{
+    color: #562EFF;
+    margin-top: 3px;
+    font-size: 24px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    row-gap: 30px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px 50px 30px 30px;
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.top-players{
+    margin-bottom: 30px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 25px;
+}
+/*-----------------
+ top blog style 
+ ------------------*/
+ .blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+ }
+ .blog{
+    display: flex;
+ }
+ .blog-info{
+    margin-left: 17px;
+ }
+ .blog-title{
+    font-size: 20px;
+ }
+ .author-name{
+    font-size: 16px;
+    color: #aeaeae;
+ }
+ .author-name a{
+    text-decoration: none;
+ }
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    row-gap: 26px;
+ }
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-author{
+    color: #ED6B4F;
+}
+.fa-star.filled{
+    color:#FFC014 ;
+}
+.fa-star.un-filled{
+    color: #AEAEAE;
+}
+.stars p span{
+    color: #AEAEAE;
+}
+
+.ratings{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+}
+.course{
+
+    padding: 20px; 
+    border-radius: 20px;
+    box-shadow:gray 20px;
+}
+/* media queries */
+/* mobile devices */
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .player{
+        flex-direction: column;
+        align-self: center;
+    }
+    .blogs, .courses ,.players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blog{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
